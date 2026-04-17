@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soul4 Travels - Your Virtual Passage to India | India Tourism</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts: Matching site fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Roboto:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Yesteryear&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header: Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-80" style="backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/180x42/222833/FFFFFF?text=Soul4+Travels" alt="Soul4 Travels Logo" height="42" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#festivals">Festival Tour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pilgrimage">Pilgrimage</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Luxurious of India</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#trains">Luxury Trains</a></li>
+                            <li><a class="dropdown-item" href="#hotels">Luxury Hotels</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning text-dark fw-bold ms-2 px-3" href="#contact">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section id="hero" class="vh-100">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('https://indiatravel.com/wp-content/uploads/2025/03/Taj-Mahal-India-Travel-from-US-UK-CANADA-SINGAOPORE.webp'); background-size: cover; background-position: center;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-5">
+                        <h2 class="display-4 fw-bold text-white mb-4" style="font-family: 'Yesteryear', cursive; font-size: 4rem;">Explore India with Our Package</h2>
+                        <h1 class="display-3 fw-bold text-white mb-4" style="font-family: 'Cormorant Garamond', serif;">Explore India,<br>Festivals & Culture</h1>
+                        <div>
+                            <a href="#contact" class="btn btn-danger btn-lg me-3 mb-3">Contact Us</a>
+                            <a href="#packages" class="btn btn-outline-light btn-lg mb-3">Packages</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('https://indiatravel.com/wp-content/uploads/2025/03/Book-Luxury-Train-of-India.webp'); background-size: cover; background-position: center;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-5">
+                        <h2 class="display-4 fw-bold text-white mb-4" style="font-family: 'Yesteryear', cursive;">Explore India with Our Package</h2>
+                        <h1 class="display-3 fw-bold text-white mb-4" style="font-family: 'Cormorant Garamond', serif;">Experience Luxury Trains of India</h1>
+                        <div>
+                            <a href="#contact" class="btn btn-danger btn-lg me-3 mb-3">Contact Us</a>
+                            <a href="#packages" class="btn btn-outline-light btn-lg mb-3">Packages</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('https://indiatravel.com/wp-content/uploads/2025/03/Umaid-Bhawan.webp'); background-size: cover; background-position: center;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-5">
+                        <h2 class="display-4 fw-bold text-white mb-4" style="font-family: 'Yesteryear', cursive;">Explore India with Our Package</h2>
+                        <h1 class="display-3 fw-bold text-white mb-4" style="font-family: 'Cormorant Garamond', serif;">Experience Unique & Luxury Hotel in India</h1>
+                        <div>
+                            <a href="#contact" class="btn btn-danger btn-lg me-3 mb-3">Contact Us</a>
+                            <a href="#packages" class="btn btn-outline-light btn-lg mb-3">Packages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Spacer for fixed nav -->
+    <div class="py-5"></div>
+
+    <!-- Popular Tours Section -->
+    <section id="popular" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3.5rem; color: #E15C76;">Most <span class="text-danger">Popular Tour</span> of India</h2>
+                </div>
+            </div>
+            <div id="popularCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 mb-4"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img src="https://indiatravel.com/wp-content/uploads/2025/03/Golden-Triangle-Tour.webp" class="card-img-top" alt="Golden Triangle Tour"><div class="card-body p-4"><h5 class="card-title fw-bold">Golden Triangle Tour</h5></div></div></div>
+                            <div class="col-md-3 mb-4"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img src="https://indiatravel.com/wp-content/uploads/2025/03/Ladakh-Tour-India-Tour-India-Travel.webp" class="card-img-top" alt="Ladakh Tour"><div class="card-body p-4"><h5 class="card-title fw-bold">Ladakh Tour</h5></div></div></div>
+                            <div class="col-md-3 mb-4"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img src="https://indiatravel.com/wp-content/uploads/2025/03/Kerala-Tour-India-Tour-India-Travel.webp" class="card-img-top" alt="Kerala Tour"><div class="card-body p-4"><h5 class="card-title fw-bold">Kerala Tour</h5></div></div></div>
+                            <div class="col-md-3 mb-4"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img src="https://indiatravel.com/wp-content/uploads/2025/03/Complete-India-Tour.webp" class="card-img-top" alt="Complete India Tour"><div class="card-body p-4"><h5 class="card-title fw-bold">Complete India Tour</h5></div></div></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3 mb-4"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img src="https://indiatravel.com/wp-content/uploads/2025/09/Panj-Takht-Sahib-Yatra.webp" class="card-img-top" alt="Panj Takht"><div class="card-body p-4"><h5 class="card-title fw-bold">Panj Takht Sahib</h5></div></div></div>
+                            <div class="col-md-3 mb-4"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img src="https://indiatravel.com/wp-content/uploads/2025/03/Rajasthan-Tour-India-Tour-and-India-Travel.webp" class="card-img-top" alt="Rajasthan Tour"><div class="card-body p-4"><h5 class="card-title fw-bold">Rajasthan Tour</h5></div></div></div>
+                            <div class="col-md-3 mb-4"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img src="https://indiatravel.com/wp-content/uploads/2025/03/Karnataka-Tour-India-Tour-India-Travel.webp" class="card-img-top" alt="Karnataka Tour"><div class="card-body p-4"><h5 class="card-title fw-bold">Karnataka Tour</h5></div></div></div>
+                            <div class="col-md-3 mb-4"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img src="https://indiatravel.com/wp-content/uploads/2025/07/Meghalaya-Tour-packages-India-travel.webp" class="card-img-top" alt="Meghalaya Tour"><div class="card-body p-4"><h5 class="card-title fw-bold">Meghalaya Tour</h5></div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Programs Section -->
+    <section id="featured" class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">Our <span class="text-danger">Featured Program</span> of The Month</h2>
+                </div>
+            </div>
+            <div id="featuredCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img src="https://indiatravel.com/wp-content/uploads/2025/10/Customised-India-Tour-with-India-Travel-Webiste.webp" class="d-block w-100 rounded shadow" style="height: 400px; object-fit: cover;" alt="Featured: Customised India Tour">
+                            </div>
+                            <div class="col-lg-8 text-center mt-4">
+                                <h3 class="fw-bold text-dark mb-3" style="font-family: 'Source Serif Pro', serif;">Customised India Tour</h3>
+                                <p class="lead text-muted mb-4">Experience the perfect blend of India's cultural heritage and modern luxury with our specially curated monthly featured program.</p>
+                                <a href="#contact" class="btn btn-danger btn-lg me-3">Learn More</a>
+                                <a href="#packages" class="btn btn-outline-danger btn-lg">View Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Featured carousel nav optional -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">What Our <span class="text-danger">Clients Say</span></h2>
+                    <p class="lead text-muted">Trusted by thousands of travelers worldwide</p>
+                </div>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow h-100 text-center p-4 rounded-4">
+                                    <div class="card-body">
+                                        <img src="https://via.placeholder.com/80x80/E15C76/FFFFFF?text=JS" class="rounded-circle mb-3 mx-auto shadow" style="width: 80px; height: 80px; object-fit: cover;">
+                                        <blockquote class="mb-3">"The Golden Triangle tour was absolutely magical! Soul4 Travels made everything seamless from start to finish."</blockquote>
+                                        <h6 class="fw-bold text-primary">Sarah Johnson</h6>
+                                        <small class="text-muted">USA</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow h-100 text-center p-4 rounded-4">
+                                    <div class="card-body">
+                                        <img src="https://via.placeholder.com/80x80/FFDA2A/000000?text=MR" class="rounded-circle mb-3 mx-auto shadow" style="width: 80px; height: 80px; object-fit: cover;">
+                                        <blockquote class="mb-3">"Luxury train experience was beyond expectations. Highly recommend for anyone visiting India!"</blockquote>
+                                        <h6 class="fw-bold text-primary">Michael Roberts</h6>
+                                        <small class="text-muted">UK</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 shadow h-100 text-center p-4 rounded-4">
+                                    <div class="card-body">
+                                        <img src="https://via.placeholder.com/80x80/222833/FFFFFF?text=AK" class="rounded-circle mb-3 mx-auto shadow" style="width: 80px; height: 80px; object-fit: cover;">
+                                        <blockquote class="mb-3">"Kerala tour was a dream come true. Perfect mix of nature, culture, and luxury."</blockquote>
+                                        <h6 class="fw-bold text-primary">Anita Kaur</h6>
+                                        <small class="text-muted">Canada</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">Explore India's <span class="text-danger">Destinations</span></h2>
+                    <p class="lead text-muted">From the snow-capped Himalayas to sun-kissed beaches, discover the diverse landscapes of India</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <a href="delhi.html" class="text-decoration-none">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/03/Golden-Triangle-Tour.webp" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Delhi">
+                        </a>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Delhi - The Heart of India</h5>
+                            <p class="card-text text-muted">Experience the blend of ancient history and modern India in the capital city.</p>
+                            <a href="delhi.html" class="btn btn-danger btn-sm">Explore Delhi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <a href="kerala.html" class="text-decoration-none">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/03/Kerala-Tour-India-Tour-India-Travel.webp" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Kerala">
+                        </a>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Kerala - God's Own Country</h5>
+                            <p class="card-text text-muted">Backwaters, beaches, and spice plantations await in this tropical paradise.</p>
+                            <a href="kerala.html" class="btn btn-danger btn-sm">Explore Kerala</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <a href="rajasthan.html" class="text-decoration-none">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/03/Rajasthan-Tour-India-Tour-and-India-Travel.webp" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Rajasthan">
+                        </a>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Rajasthan - Land of Kings</h5>
+                            <p class="card-text text-muted">Palaces, forts, and deserts showcase the royal heritage of Rajasthan.</p>
+                            <a href="rajasthan.html" class="btn btn-danger btn-sm">Explore Rajasthan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <a href="ladakh.html" class="text-decoration-none">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/03/Ladakh-Tour-India-Tour-India-Travel.webp" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Ladakh">
+                        </a>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Ladakh - The Last Frontier</h5>
+                            <p class="card-text text-muted">High-altitude deserts, monasteries, and stunning landscapes in Ladakh.</p>
+                            <a href="ladakh.html" class="btn btn-danger btn-sm">Explore Ladakh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <a href="karnataka.html" class="text-decoration-none">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/03/Karnataka-Tour-India-Tour-India-Travel.webp" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Karnataka">
+                        </a>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Karnataka - Cultural Hub</h5>
+                            <p class="card-text text-muted">Temples, wildlife, and coffee plantations in the heart of South India.</p>
+                            <a href="karnataka.html" class="btn btn-danger btn-sm">Explore Karnataka</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <a href="meghalaya.html" class="text-decoration-none">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/07/Meghalaya-Tour-packages-India-travel.webp" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Meghalaya">
+                        </a>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Meghalaya - Scotland of the East</h5>
+                            <p class="card-text text-muted">Living root bridges, waterfalls, and misty hills in Northeast India.</p>
+                            <a href="meghalaya.html" class="btn btn-danger btn-sm">Explore Meghalaya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">Tour <span class="text-danger">Packages</span></h2>
+                    <p class="lead text-muted">Curated travel experiences for every budget and preference</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/03/Golden-Triangle-Tour.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Golden Triangle">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-3">Popular</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Golden Triangle Tour</h5>
+                            <p class="card-text text-muted small">Delhi → Agra → Jaipur | 7 Days | Cultural Heritage</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-danger fw-bold mb-0">₹45,000</span>
+                                <small class="text-muted">per person</small>
+                            </div>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i>7 Days</span>
+                                <span class="badge bg-light text-dark"><i class="fas fa-users me-1"></i>2-12 People</span>
+                            </div>
+                            <a href="#contact" class="btn btn-danger w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/03/Kerala-Tour-India-Tour-India-Travel.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Kerala Backwaters">
+                            <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">Best Seller</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Kerala Backwaters</h5>
+                            <p class="card-text text-muted small">Houseboat stay, Ayurveda, Nature | 5 Days | Relaxation</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-danger fw-bold mb-0">₹35,000</span>
+                                <small class="text-muted">per person</small>
+                            </div>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i>5 Days</span>
+                                <span class="badge bg-light text-dark"><i class="fas fa-users me-1"></i>2-8 People</span>
+                            </div>
+                            <a href="#contact" class="btn btn-danger w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://indiatravel.com/wp-content/uploads/2025/03/Ladakh-Tour-India-Tour-India-Travel.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Ladakh Adventure">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-3">Adventure</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Ladakh Adventure</h5>
+                            <p class="card-text text-muted small">Pangong Lake, Nubra Valley | 8 Days | High Altitude</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-danger fw-bold mb-0">₹55,000</span>
+                                <small class="text-muted">per person</small>
+                            </div>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i>8 Days</span>
+                                <span class="badge bg-light text-dark"><i class="fas fa-users me-1"></i>4-12 People</span>
+                            </div>
+                            <a href="#contact" class="btn btn-danger w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festival Tours Section -->
+    <section id="festivals" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">Festival <span class="text-danger">Tours</span></h2>
+                    <p class="lead text-muted">Experience India's vibrant festivals and cultural celebrations</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://indiatravel.com/wp-content/uploads/2025/03/Taj-Mahal-India-Travel-from-US-UK-CANADA-SINGAOPORE.webp" class="img-fluid h-100" style="object-fit: cover;" alt="Diwali">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Diwali Festival Tour</h5>
+                                    <p class="card-text text-muted">Festival of Lights in Varanasi & Delhi | November</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-warning text-dark me-2">November</span>
+                                        <span class="badge bg-light text-dark">7 Days</span>
+                                    </div>
+                                    <a href="#contact" class="btn btn-danger">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://indiatravel.com/wp-content/uploads/2025/03/Kerala-Tour-India-Tour-India-Travel.webp" class="img-fluid h-100" style="object-fit: cover;" alt="Holi">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Holi Celebration Tour</h5>
+                                    <p class="card-text text-muted">Color festival in Mathura & Vrindavan | March</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-success me-2">March</span>
+                                        <span class="badge bg-light text-dark">5 Days</span>
+                                    </div>
+                                    <a href="#contact" class="btn btn-danger">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://indiatravel.com/wp-content/uploads/2025/03/Rajasthan-Tour-India-Tour-and-India-Travel.webp" class="img-fluid h-100" style="object-fit: cover;" alt="Pushkar Fair">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Pushkar Camel Fair</h5>
+                                    <p class="card-text text-muted">World's largest camel fair in Rajasthan | November</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-warning text-dark me-2">November</span>
+                                        <span class="badge bg-light text-dark">6 Days</span>
+                                    </div>
+                                    <a href="#contact" class="btn btn-danger">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://indiatravel.com/wp-content/uploads/2025/03/Karnataka-Tour-India-Tour-India-Travel.webp" class="img-fluid h-100" style="object-fit: cover;" alt="Ganesh Chaturthi">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Ganesh Chaturthi</h5>
+                                    <p class="card-text text-muted">Festival of Lord Ganesha in Maharashtra | September</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-info text-dark me-2">September</span>
+                                        <span class="badge bg-light text-dark">4 Days</span>
+                                    </div>
+                                    <a href="#contact" class="btn btn-danger">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilgrimage Section -->
+    <section id="pilgrimage" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">Pilgrimage <span class="text-danger">Tours</span></h2>
+                    <p class="lead text-muted">Spiritual journeys to India's sacred destinations</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Taj-Mahal-India-Travel-from-US-UK-CANADA-SINGAOPORE.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Varanasi">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="card-title fw-bold">Varanasi - The Holy City</h5>
+                            <p class="card-text text-muted">Ganges River, ancient temples, spiritual awakening</p>
+                            <a href="#contact" class="btn btn-outline-danger">Plan Pilgrimage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Rajasthan-Tour-India-Tour-and-India-Travel.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Amritsar">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="card-title fw-bold">Golden Temple - Amritsar</h5>
+                            <p class="card-text text-muted">Sikh holy shrine, langar, spiritual peace</p>
+                            <a href="#contact" class="btn btn-outline-danger">Plan Pilgrimage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Karnataka-Tour-India-Tour-and-India-Travel.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Tirupati">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="card-title fw-bold">Tirupati Balaji Temple</h5>
+                            <p class="card-text text-muted">Lord Venkateswara, divine darshan, spiritual bliss</p>
+                            <a href="#contact" class="btn btn-outline-danger">Plan Pilgrimage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Trains Section -->
+    <section id="trains" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">Luxury <span class="text-danger">Trains</span></h2>
+                    <p class="lead text-muted">Travel India in style aboard the world's most luxurious trains</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://indiatravel.com/wp-content/uploads/2025/03/Book-Luxury-Train-of-India.webp" class="img-fluid h-100" style="object-fit: cover;" alt="Palace on Wheels">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Palace on Wheels</h5>
+                                    <p class="card-text text-muted">Experience royal Rajasthan on this luxury train with palace-like accommodations.</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-warning text-dark me-2">7 Nights</span>
+                                        <span class="badge bg-light text-dark">₹5,00,000</span>
+                                    </div>
+                                    <a href="#contact" class="btn btn-danger">Book Train</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://indiatravel.com/wp-content/uploads/2025/03/Book-Luxury-Train-of-India.webp" class="img-fluid h-100" style="object-fit: cover;" alt="Maharaja Express">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Maharaja's Express</h5>
+                                    <p class="card-text text-muted">The most luxurious train in India, offering unparalleled comfort and service.</p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-success me-2">7 Nights</span>
+                                        <span class="badge bg-light text-dark">₹8,00,000</span>
+                                    </div>
+                                    <a href="#contact" class="btn btn-danger">Book Train</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Hotels Section -->
+    <section id="hotels" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">Luxury <span class="text-danger">Hotels</span></h2>
+                    <p class="lead text-muted">Stay in India's most exquisite heritage and luxury properties</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Umaid-Bhawan.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Umaid Bhawan">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="card-title fw-bold">Umaid Bhawan Palace</h5>
+                            <p class="card-text text-muted">Jodhpur's majestic palace, now a luxury hotel with royal amenities.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark">★★★★★</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-danger">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Umaid-Bhawan.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Taj Mahal Palace">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="card-title fw-bold">Taj Mahal Palace</h5>
+                            <p class="card-text text-muted">Mumbai's iconic heritage hotel, epitome of luxury and elegance.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark">★★★★★</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-danger">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Umaid-Bhawan.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="ITC Grand Chola">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="card-title fw-bold">ITC Grand Chola</h5>
+                            <p class="card-text text-muted">Chennai's luxury hotel inspired by ancient Chola architecture.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark">★★★★★</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-danger">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Blog Section -->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: 'Yesteryear', cursive; font-size: 3rem; color: #E15C76;">Latest from our <span class="text-danger">Blog</span></h2>
+                    <p class="lead text-muted">Travel insights, tips and stories from India</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Taj-Mahal-India-Travel-from-US-UK-CANADA-SINGAOPORE.webp" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Taj Mahal Guide">
+                        <div class="card-body p-4">
+                            <span class="badge bg-danger mb-2">Destinations</span>
+                            <h5 class="card-title fw-bold">Ultimate Taj Mahal Travel Guide 2025</h5>
+                            <p class="card-text text-muted small">Everything you need to know for your perfect visit...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Jan 15, 2025</small>
+                                <a href="#" class="text-decoration-none fw-bold text-primary">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Book-Luxury-Train-of-India.webp" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Luxury Trains">
+                        <div class="card-body p-4">
+                            <span class="badge bg-warning text-dark mb-2">Luxury</span>
+                            <h5 class="card-title fw-bold">Top 5 Luxury Trains in India</h5>
+                            <p class="card-text text-muted small">Experience India like royalty on these iconic trains...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Jan 12, 2025</small>
+                                <a href="#" class="text-decoration-none fw-bold text-primary">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow overflow-hidden">
+                        <img src="https://indiatravel.com/wp-content/uploads/2025/03/Umaid-Bhawan.webp" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Luxury Hotels">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success mb-2">Hotels</span>
+                            <h5 class="card-title fw-bold">Palace Hotels of India</h5>
+                            <p class="card-text text-muted small">Live like Maharaja in these heritage properties...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Jan 10, 2025</small>
+                                <a href="#" class="text-decoration-none fw-bold text-primary">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold text-dark mb-3">Get In Touch</h2>
+                        <p class="lead text-muted">Ready to plan your dream India trip? Contact us for personalized travel packages and expert guidance.</p>
+                    </div>
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-5">
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="contactName" class="form-label fw-semibold">Full Name *</label>
+                                        <input type="text" class="form-control form-control-lg" id="contactName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contactEmail" class="form-label fw-semibold">Email Address *</label>
+                                        <input type="email" class="form-control form-control-lg" id="contactEmail" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contactPhone" class="form-label fw-semibold">Phone Number</label>
+                                        <input type="tel" class="form-control form-control-lg" id="contactPhone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contactDestination" class="form-label fw-semibold">Interested Destination</label>
+                                        <select class="form-select form-select-lg" id="contactDestination">
+                                            <option value="">Select Destination</option>
+                                            <option value="delhi">Delhi</option>
+                                            <option value="rajasthan">Rajasthan</option>
+                                            <option value="kerala">Kerala</option>
+                                            <option value="karnataka">Karnataka</option>
+                                            <option value="ladakh">Ladakh</option>
+                                            <option value="meghalaya">Meghalaya</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contactMessage" class="form-label fw-semibold">Message *</label>
+                                        <textarea class="form-control form-control-lg" id="contactMessage" rows="4" placeholder="Tell us about your travel plans, group size, preferred dates, and any special requirements..." required></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-danger btn-lg px-5 py-3" id="submitBtn">
+                                            <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="formMessage" class="mt-3 d-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="navbar-brand mb-3 d-block">
+                        <img src="https://via.placeholder.com/180x42/222833/FFFFFF?text=Soul4+Travels" alt="Soul4 Travels" height="42" class="img-fluid filter-white">
+                    </a>
+                    <p class="lead mb-4">Your trusted partner for authentic India travel experiences. Luxury tours, cultural immersion, and personalized journeys.</p>
+                    <div class="d-flex gap-3 mb-4">
+                        <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#destinations" class="text-white-50 text-decoration-none mb-2 d-block">Destinations</a></li>
+                        <li><a href="#packages" class="text-white-50 text-decoration-none mb-2 d-block">Tour Packages</a></li>
+                        <li><a href="#festivals" class="text-white-50 text-decoration-none mb-2 d-block">Festival Tours</a></li>
+                        <li><a href="#pilgrimage" class="text-white-50 text-decoration-none mb-2 d-block">Pilgrimage</a></li>
+                        <li><a href="#trains" class="text-white-50 text-decoration-none mb-2 d-block">Luxury Trains</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none mb-2 d-block">Custom Tours</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none mb-2 d-block">Group Travel</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none mb-2 d-block">Luxury Hotels</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none mb-2 d-block">Visa Assistance</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none mb-2 d-block">24/7 Support</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Contact Info</h5>
+                    <div class="mb-3">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span>New Delhi, India</span>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:+911234567890" class="text-white-50 text-decoration-none">+91 123 456 7890</a>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="mailto:info@indiatravel.com" class="text-white-50 text-decoration-none">info@indiatravel.com</a>
+                    </div>
+                    <div>
+                        <small class="text-white-50">Follow us for travel updates</small>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small>&copy; 2026 Soul4 Travels. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small>Designed with ❤️ for wanderlust travelers</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-danger back-to-top position-fixed" style="bottom: 2rem; right: 2rem; z-index: 1000; display: none;">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
